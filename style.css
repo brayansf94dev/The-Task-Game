@@ -1,0 +1,16 @@
+/* style.css */
+body { 
+    margin: 0; 
+    background-color: #000; 
+    overflow: hidden; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+#game-canvas {
+    width: 100vw;
+    height: 100vh;
+    image-rendering: pixelated; /* Mantém os pixels duros (Upscale PS1) */
+}
