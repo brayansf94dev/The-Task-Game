@@ -67,8 +67,8 @@ function setCameraMode(mode) {
     else if (mode === 'CADEIRA') {
         if (orbitControls) orbitControls.enabled = false;
         
-        // Posição de quem está sentado na cadeira, dentro da sala (parede traseira em Z=1.6)
-        camera.position.set(0, 1.3, 1.4);
+        // Posição de quem está sentado na cadeira, um pouco recuado da mesa
+        camera.position.set(0, 1.3, 1.8);
         camera.lookAt(0, 1.0, 0.5); 
         
         // Zera os alvos do mouse para a câmera não dar um "pulo" brusco
@@ -80,7 +80,7 @@ function setCameraMode(mode) {
         if (orbitControls) orbitControls.enabled = false;
         
         // Câmera gruda na frente da tela do CRT
-        camera.position.set(0, 1.17, 1.0); 
+        camera.position.set(0, 1.17, 1.1); 
         // Olha diretamente para o centro da tela
         camera.lookAt(0, 1.17, 0.5); 
         
